@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(90deg, rgba(88,113,137,1) 0%, rgba(2,0,36,1) 0%, rgba(56,61,100,1) 0%, rgba(83,107,132,1) 0%, rgba(0,212,255,1) 100%, rgba(133,173,191,1) 100%, rgba(187,244,255,1) 100%, rgba(93,119,142,1) 100%);
+}
+
+div{
+    margin-top: 30px;
+}
+
+.tabla{
+    background: #34495E;
+    color: #fff;
+    border-radius: .4em;
+    overflow: hidden;
+    margin: auto;
+    padding: 30px;
+    width: 1000px;
+    text-align: center;
+    font-size: 25px;
+}
+
+table thead{
+    color: rgb(204, 204, 9);
+    font-weight: bold;
+}
+
+table tbody td{
+    padding: .4em;
+}
+
+input{
+    background-color: #00b7f8;
+    border-bottom: 5px solid #0045a6;
+    border-radius: 7px;
+    box-shadow: 4px 4px 4px #999;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-family: monospace;
+    font-size: 20px;
+    margin: auto;
+    padding: 5px 5px;
+    text-align: center;
+    transition: all 0.2s ease 0s;   
+}
+
+input:hover{
+    background: #0096f7;
+}
+
+input:active{
+    box-shadow: 2px 2px 2px #777, 0px 0px 35px 0px #00b7f8;
+    border-bottom:1px solid #0045A6;
+    text-shadow:  0px 0px 5px #fff, 0px 0px 5px #fff;
+	transform: translateY(4px);
+    transition: all 0.1s ease 0s;
+}
+
+@media (max-width:1300px){
+    .tabla{
+        width: 1100px;
+        padding: 30px;
+        font-size: 23px;
+    }
+}
+
+@media (max-width:1150px){
+    .tabla{
+        width: 950px;
+        padding: 30px;
+        font-size: 23px;
+    }
+}
+
+@media (max-width:950px){
+    .tabla{
+        width: 550px;
+        padding: 30px;
+        font-size: 15px;
+    }
+    input{
+        font-size: 15px;
+    }
+}
+
+@media (max-width:550px){
+    .tabla{
+        width: 250px;
+        padding: 20px;
+        font-size:15px;
+    }
+    input{
+        font-size: 10px;
+    }
+}
+
+@media (max-width:350px){
+    .tabla{
+        width: 150px;
+        padding: 20px;
+        font-size:8px;
+    }
+
+    input{
+        font-size: 10px;
+    }
+}

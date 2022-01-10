@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(123, 156, 228);
+}
+
+html {
+	overflow-x:hidden; 
+}
+
+.title{
+    margin-bottom:30px ;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.container{  
+    position: relative;
+    margin: auto;
+}
+
+div form{
+    width: 500px;
+    height: 550px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: solid;
+    transform: translate(-50%,15%);
+    border-radius: 10%;
+    text-align: right;
+
+    background: rgba( 255, 255, 255, 0.45 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0px );
+    -webkit-backdrop-filter: blur( 0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    color: white;
+     
+}
+
+div form input{
+    margin: 30px 30px 30px 30px;
+    font-size: 20px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+div form label{
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+.btnGuardar{
+   width: 400px;
+
+    background-color: #00b7f8;
+    border-bottom: 5px solid #0045a6;
+    border-radius: 7px;
+    box-shadow: 4px 4px 4px #999;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-family: monospace;
+    font-size: 20px;
+    margin: 30px auto;
+    padding: 5px 5px;
+    text-align: center;
+    transition: all 0.2s ease 0s;
+    
+}
+
+.btnGuardar:hover{
+    background: #0096f7;
+}
+
+.btnGuardar:active{
+    box-shadow: 2px 2px 2px #777, 0px 0px 35px 0px #00b7f8;
+    border-bottom:1px solid #0045A6;
+    text-shadow:  0px 0px 5px #fff, 0px 0px 5px #fff;
+	transform: translateY(4px);
+    transition: all 0.1s ease 0s;
+}
+
+@media (max-width:450px){
+    div form{
+        width: 350px;
+        height: 550px;
+    }
+
+    div form input{
+        width: 205px;
+        margin: 30px 10px 30px 10px;
+    }
+
+    .btnGuardar{
+        width: 150px;
+    }
+
+}
+
+@media (max-width:330px){
+    div form{
+        width: 280px;
+    }
+
+    div form input{
+        width:135px;
+        margin: 30px 10px 30px 10px;
+    }
+}
